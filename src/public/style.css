@@ -1,0 +1,111 @@
+*{margin: 0;padding: 0;box-sizing: border-box;outline: none;}
+body,html,#root{
+    height: 100%;
+}
+body{
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #e5e6f0;
+}
+body,input,button{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+#app{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+main{
+    flex: 1;
+}
+main ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    list-style: none;
+}
+
+@media(max-width:650px){
+    main ul{
+        grid-template-columns: 1fr;
+    }
+    #app main{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+main ul li{
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 9px 0 #b5b5b5;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-content: stretch;
+}
+main ul li:hover{
+    transform: scale(1.09);
+}
+main ul li header img{
+    width: 45px;height: 45px;
+    border-radius: 50px;box-shadow: 0 0 5px #cacaca;
+    background-position: center;
+    background-size: cover;
+}
+main ul li header{
+    display: flex;
+    align-items: center;
+}
+main ul li div{
+    margin-left: 12px;
+}
+main ul li div strong{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+}
+main ul li div span{
+    font-size: 13px;
+    font-weight: 300;
+    color: #333;
+}
+main ul li p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+    line-height: 17px;
+    margin: 11px 0;
+}
+
+main ul li a{
+    background: #e88606;  
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0;
+    border: 0;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s;    
+}
+main ul li a:hover{
+    background: #ac6407;  
+}   
+
+@media(max-width:1000px){
+    #app{
+        flex-direction: column;
+    }
+    #app main{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

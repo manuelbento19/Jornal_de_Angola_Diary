@@ -1,0 +1,21 @@
+{
+  "name": "executa_shell",
+  "version": "1.0.0",
+  "description": "API pra executar shell_script no lado do Servidor",
+  "main": "index.js",
+  "author": "Manuel Bento",
+  "license": "MIT",
+  "scripts": {
+    "dev":"nodemon src/index.js"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "dotenv": "^14.3.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
